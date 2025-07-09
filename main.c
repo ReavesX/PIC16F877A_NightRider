@@ -38,8 +38,6 @@ void ledChoice(int rbCurr, int rbPrev) {
 void main(void) { 
     TRISB = 0x00; //set the PORTB pins as output by setting TRISB to 0
     PORTB = 0x00; //Make all output of RB0 low by setting all bits to 0
-    // TRISD = 0x00;
-    // PORTD = 0x00;
     int sequence[] = {0,1,2,3,4,5,6,7};// LED sequence is defined as an array so that it may be referenced by the function
     int sequenceLength = sizeof(sequence) / sizeof(sequence[0]);
    
